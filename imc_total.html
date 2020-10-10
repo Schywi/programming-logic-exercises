@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() { 
+	document.write("<br><br>");
+}
+
+function mostra(frase) {
+	document.write(frase);
+	pulaLinha();
+}
+
+// automatizar o cauculo do imc
+// nele tu bota apenas os dados e ele ja calcula
+
+function calculoImc (altura, peso) {
+
+	var imc = peso / ( altura*altura); 
+	return imc 
+}
+
+var imcFlavio = calculoImc(1.80, 60);
+var imcLeona= calculoImc(1.95, 80);
+var totalImc = imcFlavio+imcLeona
+
+mostra(imcFlavio); 
+mostra(imcLeona); 
+document.write("O Imc total é :" + totalImc);
+
+</script>
